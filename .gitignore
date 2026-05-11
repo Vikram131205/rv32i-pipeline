@@ -1,0 +1,27 @@
+# Vivado generated files
+pp/pp.cache/
+pp/pp.hw/
+pp/pp.ip_user_files/
+pp/pp.runs/
+pp/pp.sim/sim_1/behav/xsim/xsim.dir/
+pp/pp.sim/sim_1/behav/xsim/*.log
+pp/pp.sim/sim_1/behav/xsim/*.pb
+pp/pp.sim/sim_1/behav/xsim/*.jou
+pp/pp.sim/sim_1/behav/xsim/*.wdb
+pp/pp.xpr
+*.jou
+*.log
+*.pb
+*.wdb
+*.str
+
+# Simulation build artifacts
+cocotb_test/sim_build/
+cocotb_test/__pycache__/
+cocotb_test/run_test.py
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*~
