@@ -69,7 +69,8 @@ pp/
 
 ## Verification
 
-###Initial Verification Using Waveforms
+### Initial Verification Using Waveforms
+
 <img width="1909" height="1130" alt="image" src="https://github.com/user-attachments/assets/b1077ebb-086d-49c9-aa15-f57560d4a995" />
 
 Credits - Xilinx Vivado 
