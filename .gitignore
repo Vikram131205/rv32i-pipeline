@@ -3,12 +3,9 @@ pp/pp.cache/
 pp/pp.hw/
 pp/pp.ip_user_files/
 pp/pp.runs/
-pp/pp.sim/sim_1/behav/xsim/xsim.dir/
-pp/pp.sim/sim_1/behav/xsim/*.log
-pp/pp.sim/sim_1/behav/xsim/*.pb
-pp/pp.sim/sim_1/behav/xsim/*.jou
-pp/pp.sim/sim_1/behav/xsim/*.wdb
-pp/pp.xpr
+pp/pp.sim/
+pp/.Xil/
+pp.xpr.zip
 *.jou
 *.log
 *.pb
@@ -16,12 +13,13 @@ pp/pp.xpr
 *.str
 
 # Simulation build artifacts
-cocotb_test/sim_build/
-cocotb_test/__pycache__/
-cocotb_test/run_test.py
+verification/sim_build/
+verification/__pycache__/
+verification/run_test.py
 
 # OS files
 .DS_Store
 Thumbs.db
 *.swp
 *~
+*.pyc

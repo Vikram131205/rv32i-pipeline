@@ -20,9 +20,10 @@ A fully functional **RISC-V RV32I** 5-stage pipelined processor implemented in V
 |------|-------------|
 | **R-type** | ADD, SUB, SLL, SLT, SLTU, XOR, SRL, SRA, OR, AND |
 | **I-type** | ADDI, SLTI, SLTIU, XORI, ORI, ANDI, SLLI, SRLI, SRAI |
-| **Load**   | LW |
-| **Store**  | SW |
+| **Load**   | LB, LH, LW, LBU, LHU |
+| **Store**  | SB, SH, SW |
 | **Branch** | BEQ, BNE, BLT, BGE, BLTU, BGEU |
+| **Jump**   | JAL |
 
 ### Hazard Handling
 
@@ -57,7 +58,7 @@ pp/
 ├── pp.srcs/sim_1/new/
 │   └── testbench.v              # Self-checking Vivado testbench
 │
-└── cocotb_test/                 # Golden model verification
+└── verification/                # Golden model verification
     ├── Makefile                 # Just type 'make'
     ├── run.bat                  # Windows: run.bat [seed] [xsim|iverilog]
     ├── golden_model.py          # Python RV32I ISA simulator
@@ -71,7 +72,7 @@ pp/
 ### Quick Start (WSL + Icarus Verilog)
 
 ```bash
-cd cocotb_test
+cd verification
 make                  # default seed=42
 make SEED=123         # different random seed
 make clean            # remove build artifacts
@@ -80,7 +81,7 @@ make clean            # remove build artifacts
 ### Quick Start (Windows + Vivado)
 
 ```batch
-cd cocotb_test
+cd verification
 run.bat 42 xsim
 ```
 
